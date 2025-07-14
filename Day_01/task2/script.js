@@ -3,7 +3,7 @@ let name = prompt("Enter your name:");
 let age = parseInt(prompt("Enter your age:"));
 let experience = parseInt(prompt("Enter your years of experience:"));
 let rating = parseInt(prompt("Rate yourself from 1 to 10:"));
-// let Base Salary = 5000;
+
 
 //2
 let category = "";
