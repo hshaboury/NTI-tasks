@@ -22,11 +22,9 @@ if (age < 13) {
 
 if (Student) {
   message = message +  "Don't forget to study hard!";
-//1
+
 console.log(message);
-//2
 alert(message);
-//3
 document.getElementById("output").innerText = message;
 }
 
