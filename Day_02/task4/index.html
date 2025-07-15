@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    form { margin-bottom: 20px; }
+    .task { padding: 10px; margin-bottom: 10px; color: white; border-radius: 5px; }
+    /* 8 */
+    .task.task { background-color: red; }
+    .task.in-progress { background-color: orange; }
+    .task.done { background-color: green; }
+    .actions { margin-top: 5px; }
+    button { margin-right: 5px; }
+    #finalResult { margin-top: 20px; padding: 10px; background: #f1f1f1; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <!-- 1 -->
+  <h1>Task Manager</h1>
+      <form id="taskForm">
+      <label for="taskName">Task Name:</label>
+      <input type="text" id="taskName" placeholder="Enter task name" required>
+      <label for="taskType">Select Task Type:</label>
+      <select id="taskType">
+        <option value="Task">Task</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Done">Done</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+
+  <h2>Task List</h2>
+  <div id="taskList"></div>
+
+  <h3>Final Result:</h3>
+  <div id="finalResult"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
