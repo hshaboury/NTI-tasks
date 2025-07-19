@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form id="eventForm">
+    <h2>Countdown Timer</h2>
+    <input type="text" id="eventName" placeholder="Enter Event Name" required />
+    <input type="number" id="timeRemaining" placeholder="Time in seconds" required />
+    <button type="submit">Start Countdown</button>
+  </form>
+
+  <div id="countdown"></div>
+
+  <input type="text" id="search" placeholder="Search Event by Name" />
+  <div id="eventsList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

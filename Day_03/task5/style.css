@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  padding: 40px;
+  text-align: center;
+}
+
+form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+input, button {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#countdown {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #333;
+}
+
+#search {
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 16px;
+  width: 60%;
+}
+
+#eventsList {
+  margin-top: 20px;
+}
+
+.eventItem {
+  background: #e1f5fe;
+  padding: 10px;
+  margin: 5px auto;
+  width: 60%;
+  border-radius: 5px;
+  text-align: left;
+}
