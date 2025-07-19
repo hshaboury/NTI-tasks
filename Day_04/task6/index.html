@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Registration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h2>Product Registration Form</h2>
+  <form id="productForm">
+    <input type="text" id="name" placeholder="Product Name" required />
+    <input type="text" id="description" placeholder="Description" required />
+    <input type="number" id="price" placeholder="Price" required />
+    <label for="category">Category</label>
+    <select id="category" required>
+      <option value="">--Select Category--</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Clothing">Clothing</option>
+      <option value="Books">Books</option>
+      <option value="Furniture">Furniture</option>
+    </select>
+
+    <label>
+      <input type="checkbox" id="availability" />
+      Available
+    </label>
+
+    <button type="submit" id="submitBtn">Add Product</button>
+  </form>
+
+  <input type="text" id="searchInput" placeholder="Search by name or category..." />
+  <label for="filterCategory">Filter by Category</label>
+  <select id="filterCategory">
+    <option value="">All Categories</option>
+    <option value="Electronics">Electronics</option>
+    <option value="Clothing">Clothing</option>
+    <option value="Books">Books</option>
+    <option value="Furniture">Furniture</option>
+  </select>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Availability</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="productTableBody">
+      <!-- Dynamic content -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
